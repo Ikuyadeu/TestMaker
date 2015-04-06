@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<!--?import javafx.collections.*? -->
+
+
+<BorderPane prefHeight="750.0" prefWidth="750.0"
+	fx:controller="ikuyadeu.TestMaker" xmlns="http:javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1">
+	<stylesheets>
+		<URL value="@window.css" />
+	</stylesheets>
+	<top>
+		<TextArea fx:id="label1" text="ここにもんだいがでるよ" prefWidth="500"
+			prefHeight="400" />
+
+		<BorderPane.margin>
+			<Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+		</BorderPane.margin>
+	</top>
+	<center>
+		<VBox BorderPane.alignment="CENTER">
+			<HBox prefHeight="100.0" prefWidth="500.0" alignment="CENTER">
+				<ChoiceBox fx:id="digit" prefHeight="30.0" prefWidth="100.0">
+					<String fx:value="１けた" />
+					<String fx:value="２けた" />
+					<String fx:value="３けた" />
+					<String fx:value="４けた" />
+					<HBox.margin>
+						<Insets left="50.0" right="50.0" />
+					</HBox.margin>
+				</ChoiceBox>
+
+				<ChoiceBox fx:id="operator" prefHeight="30.0" prefWidth="100.0">
+					<String fx:value="＋" />
+					<String fx:value="－" />
+					<String fx:value="×" />
+					<String fx:value="÷" />
+					<HBox.margin>
+						<Insets left="50.0" right="50.0" />
+					</HBox.margin>
+				</ChoiceBox>
+
+				<ChoiceBox fx:id="digit2" prefHeight="30.0" prefWidth="100.0">
+					<String fx:value="１けた" />
+					<String fx:value="２けた" />
+					<String fx:value="３けた" />
+					<String fx:value="４けた" />
+					<HBox.margin>
+						<Insets left="50.0" right="50.0" />
+					</HBox.margin>
+				</ChoiceBox>
+			</HBox>
+			<HBox prefHeight="100.0" alignment="CENTER">
+				<HBox prefWidth="200.0">
+					<Label>もんだいのかず:</Label>
+					<ChoiceBox fx:id="num" prefHeight="30.0" prefWidth="70.0">
+						<Integer fx:value="10" />
+						<Integer fx:value="20" />
+						<Integer fx:value="40" />
+						<Integer fx:value="80" />
+					</ChoiceBox>
+				</HBox>
+			</HBox>
+			<HBox prefHeight="100.0" alignment="CENTER">
+				<HBox prefWidth="200.0">
+					<Label>あまり:</Label>
+					<CheckBox fx:id="amari" />
+				</HBox>
+				<HBox prefWidth="200.0">
+					<Label>くりあがり・くりさがりなし:</Label>
+					<CheckBox fx:id="agari" />
+				</HBox>
+			</HBox>
+			<HBox prefHeight="100.0" alignment="CENTER">
+				<HBox prefWidth="175.0">
+					<Label>先生用:</Label>
+					<CheckBox fx:id="teacher" />
+				</HBox>
+			</HBox>
+		</VBox>
+	</center>
+	<bottom>
+		<Button fx:id="btn1" onAction="#make" prefWidth="150"
+			prefHeight="40" text="つくる" BorderPane.alignment="CENTER" />
+
+		<BorderPane.margin>
+			<Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+		</BorderPane.margin>
+
+	</bottom>
+</BorderPane>

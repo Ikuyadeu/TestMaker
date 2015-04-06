@@ -1,0 +1,15 @@
+TextArea {
+	-fx-font-size: 16pt;
+	-fx-font-family: Serif Bold;
+}
+
+ChoicBox,Label {
+	-fx-font-size: 12pt;
+	-fx-font-family: Serif Bold;
+	
+}
+
+Button {
+	-fx-font-size: 16pt;
+	-fx-font-family: Serif Bold;
+}
