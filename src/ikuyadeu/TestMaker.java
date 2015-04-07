@@ -9,16 +9,16 @@ import javafx.scene.control.TextArea;
 
 public class TestMaker {
 	@FXML private TextArea label1;
-	@FXML private ChoiceBox<String> digit;
-	@FXML private ChoiceBox<String> digit2;
-	@FXML private ChoiceBox<String> operator;
-	@FXML private ChoiceBox<Integer> num;
-	@FXML private CheckBox amari;
-	@FXML private CheckBox agari;
-	@FXML private CheckBox teacher;
+	@FXML private ChoiceBox<String> digit;//第一の桁数
+	@FXML private ChoiceBox<String> digit2;//第二の桁数
+	@FXML private ChoiceBox<String> operator;//演算子
+	@FXML private ChoiceBox<Integer> num;//問題数
+	@FXML private CheckBox amari;//あまりの有無
+	@FXML private CheckBox agari;//繰り上がり・繰り下がりの有無
+	@FXML private CheckBox teacher;//先生用
 	
-	private String problem;
-	private String answer;
+	private String problem;//問題の内容
+	private String answer;//答え
 	
 	@FXML protected void make(ActionEvent event){
 		problem="";
