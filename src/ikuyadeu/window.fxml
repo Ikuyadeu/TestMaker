@@ -6,7 +6,6 @@
 <?import java.net.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<!--?import javafx.collections.*? -->
 
 
 <BorderPane prefHeight="750.0" prefWidth="750.0"
@@ -26,7 +25,7 @@
 	<center>
 		<VBox BorderPane.alignment="CENTER">
 			<HBox prefHeight="100.0" prefWidth="500.0" alignment="CENTER">
-				<ChoiceBox fx:id="digit" prefHeight="30.0" prefWidth="100.0">
+				<ChoiceBox fx:id="digit" prefHeight="30.0" prefWidth="100.0" value="１けた">
 					<String fx:value="１けた" />
 					<String fx:value="２けた" />
 					<String fx:value="３けた" />
@@ -36,7 +35,7 @@
 					</HBox.margin>
 				</ChoiceBox>
 
-				<ChoiceBox fx:id="operator" prefHeight="30.0" prefWidth="100.0">
+				<ChoiceBox fx:id="operator" prefHeight="30.0" prefWidth="100.0" value="＋">
 					<String fx:value="＋" />
 					<String fx:value="－" />
 					<String fx:value="×" />
@@ -46,7 +45,7 @@
 					</HBox.margin>
 				</ChoiceBox>
 
-				<ChoiceBox fx:id="digit2" prefHeight="30.0" prefWidth="100.0">
+				<ChoiceBox fx:id="digit2" prefHeight="30.0" prefWidth="100.0" value="１けた">
 					<String fx:value="１けた" />
 					<String fx:value="２けた" />
 					<String fx:value="３けた" />
@@ -57,13 +56,13 @@
 				</ChoiceBox>
 			</HBox>
 			<HBox prefHeight="100.0" alignment="CENTER">
-				<HBox prefWidth="200.0">
+				<HBox prefWidth="300.0">
 					<Label>もんだいのかず:</Label>
-					<ChoiceBox fx:id="num" prefHeight="30.0" prefWidth="70.0">
-						<Integer fx:value="10" />
-						<Integer fx:value="20" />
-						<Integer fx:value="40" />
-						<Integer fx:value="80" />
+					<ChoiceBox fx:id="num" prefHeight="30.0" prefWidth="100.0" value="10もん" >
+						<String fx:value="10もん" />
+						<String fx:value="20もん" />
+						<String fx:value="50もん" />
+						<String fx:value="100もん" />
 					</ChoiceBox>
 				</HBox>
 			</HBox>

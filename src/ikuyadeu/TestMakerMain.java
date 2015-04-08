@@ -13,7 +13,7 @@ public class TestMakerMain extends Application {
 		Parent root = FXMLLoader.load(getClass().getResource("window.fxml"));
 		Scene scene = new Scene(root,750,750);
 		stage.setScene(scene);
-		stage.setTitle("さんすうマスター");
+		stage.setTitle("てすとめーかー");
 		stage.show();
 	}
 
