@@ -12,7 +12,7 @@ public class TestMaker {
 	@FXML private ChoiceBox<String> digit;//第一の桁数
 	@FXML private ChoiceBox<String> digit2;//第二の桁数
 	@FXML private ChoiceBox<String> operator;//演算子
-	@FXML private ChoiceBox<Integer> num;//問題数
+	@FXML private ChoiceBox<String> num;//問題数
 	@FXML private CheckBox amari;//あまりの有無
 	@FXML private CheckBox agari;//繰り上がり・繰り下がりの有無
 	@FXML private CheckBox teacher;//先生用
@@ -23,12 +23,11 @@ public class TestMaker {
 	@FXML protected void make(ActionEvent event){
 		problem="";
 		answer="";
-		Integer problemNum = num.getValue();
-		if(problemNum==null)problemNum=10;
 		String opr = operator.getValue();
 		if(opr==null)opr = "＋";
 		int dig  = makeDigit(digit.getValue());
 		int dig2 = makeDigit(digit2.getValue());
+		int problemNum = makeProblemnum(num.getValue());
 		
 		for (int i = 0; i < problemNum; i++) {
 			AbstractTest test = new NomalTest(opr,dig,dig2,amari.isSelected(),agari.isSelected());
@@ -66,6 +65,22 @@ public class TestMaker {
 				return 1;
 			}
 			
+		}
+		
+		//問題数を整数に変換する
+		private int makeProblemnum(String value){
+			switch (value) {
+			case "10もん":
+				return 10;
+			case "20もん":
+				return 20;
+			case "50もん":
+				return 50;
+			case "100もん":
+				return 100;
+			default:
+				return 1;
+			}
 		}
 
 }
