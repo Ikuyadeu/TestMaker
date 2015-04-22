@@ -15,7 +15,7 @@
 		<URL value="@window.css" />
 	</stylesheets>
 	<top>
-		<TextArea fx:id="label1" text="ここにもんだいがでるよ" prefWidth="500"
+		<TextArea fx:id="label1" text="ここに問題がでるよ" prefWidth="500"
 			prefHeight="400" />
 
 		<BorderPane.margin>
@@ -57,6 +57,16 @@
 			</HBox>
 			<HBox prefHeight="100.0" alignment="CENTER">
 				<HBox prefWidth="300.0">
+					<Label>小数点以下:</Label>
+					<ChoiceBox fx:id="float" prefHeight="30.0" prefWidth="100.0" value="なし" >
+						<String fx:value="なし" />
+						<String fx:value="だい１位" />
+						<String fx:value="だい２位" />
+						<String fx:value="だい３位" />
+					</ChoiceBox>
+				</HBox>
+			
+				<HBox prefWidth="300.0">
 					<Label>もんだいのかず:</Label>
 					<ChoiceBox fx:id="num" prefHeight="30.0" prefWidth="100.0" value="10もん" >
 						<String fx:value="10もん" />
@@ -68,7 +78,7 @@
 			</HBox>
 			<HBox prefHeight="100.0" alignment="CENTER">
 				<HBox prefWidth="200.0">
-					<Label>あまり:</Label>
+					<Label>わりざんのあまり:</Label>
 					<CheckBox fx:id="amari" />
 				</HBox>
 				<HBox prefWidth="200.0">
