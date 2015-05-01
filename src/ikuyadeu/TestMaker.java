@@ -42,7 +42,7 @@ public class TestMaker {
 		int problemNum = makeProblemnum(num.getValue());
 		int newLine = makeColumnNum(columnNum.getValue());
 		for (int i = 0; i < problemNum; i++) {
-			end = (i%newLine==0 && i!= 0)?"\n":"    ";
+			end = ((i+1)%newLine==0)?"\n":"    ";
 			AbstractTest test = new NomalTest(opr, dig, dig2,
 					amari.isSelected(), agari.isSelected());
 			test.makeTest();
@@ -54,7 +54,7 @@ public class TestMaker {
 				problem += end;
 				answer += "(" + number + ")" + test.getAnswer();
 				if ((i + 1) % 5 == 0)
-					answer += end;
+					answer += "\n";
 			}
 		}
 		String text = problem;
