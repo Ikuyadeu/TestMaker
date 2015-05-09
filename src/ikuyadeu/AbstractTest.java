@@ -6,6 +6,7 @@ abstract class AbstractTest {
 	protected String operator;
 	protected int digit1;
 	protected int digit2;
+	protected int floutnum;
 	protected boolean amari;
 	
 	public abstract void makeTest();//問題の作成

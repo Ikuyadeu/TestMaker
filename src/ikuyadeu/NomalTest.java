@@ -4,11 +4,12 @@ public class NomalTest extends AbstractTest {
 
 	boolean agari;
 
-	public NomalTest(String operator, int digit1, int digit2, boolean amari,
-			boolean agari) {
+	public NomalTest(String operator, int digit1, int digit2,int floutnum,
+			boolean amari,boolean agari) {
 		this.operator = operator;
 		this.digit1 = digit1;
 		this.digit2 = digit2;
+		this.floutnum = floutnum;
 		this.amari = amari;
 		this.agari = agari;
 	}
@@ -23,7 +24,7 @@ public class NomalTest extends AbstractTest {
 				value1 = makeValue(this.digit1);
 				value2 = makeValue(this.digit2);
 			}
-			this.answer = "" + (value1 + value2);
+			this.answer = "" + ((double)((value1 + value2) / floutnum));
 			break;
 		case "－":
 			//マイナスの値になる場合、繰り上がり・繰り下がりなしの場合やり直し
@@ -53,11 +54,12 @@ public class NomalTest extends AbstractTest {
 		default:
 			this.answer = "?";
 		}
-		this.problem = value1 + this.operator + value2;
+		this.problem = (double)(value1/floutnum) + this.operator + value2;
 	}
 
 	// 桁数によって適当な乱数を生成する。
 	private int makeValue(int digit) {
+		digit *= floutnum;
 		int randValue = (int) (Math.random() * digit * 9 + digit);
 		return randValue;
 	}

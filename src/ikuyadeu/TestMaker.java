@@ -16,6 +16,8 @@ public class TestMaker {
 	@FXML
 	private ChoiceBox<String> operator;// 演算子
 	@FXML
+	private ChoiceBox<String> shosu;//小数点
+	@FXML
 	private ChoiceBox<String> num;// 問題数
 	@FXML
 	private ChoiceBox<String> columnNum;// 表示する列数
@@ -39,11 +41,12 @@ public class TestMaker {
 			opr = "＋";
 		int dig = makeDigit(digit.getValue());
 		int dig2 = makeDigit(digit2.getValue());
+		int floutnum = makeFloutNum(shosu.getValue());
 		int problemNum = makeProblemnum(num.getValue());
 		int newLine = makeColumnNum(columnNum.getValue());
 		for (int i = 0; i < problemNum; i++) {
 			end = ((i+1)%newLine==0)?"\n":"    ";
-			AbstractTest test = new NomalTest(opr, dig, dig2,
+			AbstractTest test = new NomalTest(opr, dig, dig2,floutnum,
 					amari.isSelected(), agari.isSelected());
 			test.makeTest();
 			String number = (i < 9) ? " " + (i + 1) : "" + (i + 1);
@@ -80,7 +83,22 @@ public class TestMaker {
 		default:
 			return 1;
 		}
-
+	}
+	
+	// 小数点以下の値を整数に変換する
+	private int makeFloutNum(String value) {
+		switch (value) {
+		case "なし":
+			return 1;
+		case "だい１位":
+			return 10;
+		case "だい２位":
+			return 100;
+		case "だい３位":
+			return 1000;
+		default:
+			return 1;
+		}
 	}
 
 	// 問題数を整数に変換する
@@ -114,5 +132,6 @@ public class TestMaker {
 			return 1;
 		}
 	}
+	
 
 }
