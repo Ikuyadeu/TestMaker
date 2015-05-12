@@ -1,5 +1,5 @@
 package ikuyadeu;
-
+//整数のテスト
 public class NomalTest extends AbstractTest {
 
 	boolean agari;
