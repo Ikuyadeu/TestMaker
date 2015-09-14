@@ -4,6 +4,13 @@ TestMaker(てすとめーかー)
 
 何桁と何桁のなんの計算をするかを選択肢し、「作成」ボタンを押すことで問題を自動生成してくれます。  
 
+実行方法
+--------
+下記からダウンロードし、解凍
+https://github.com/Ikuyadeu/TestMaker/archive/master.zip
+
+java -jar TestMaker.java  
+コマンドを実行することで使用できます。  
 動作環境
 ---------
 Java8が動作する環境(Ubuntu14.04で動作確認済み)  
