@@ -8,8 +8,11 @@ TestMaker(てすとめーかー)
 --------
 下記からダウンロードし、解凍
 https://github.com/Ikuyadeu/TestMaker/archive/master.zip
+```
+$ cd src
+$ java -jar TestMaker.java  
+```
 
-java -jar TestMaker.java  
 コマンドを実行することで使用できます。  
 動作環境
 ---------
