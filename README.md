@@ -2,14 +2,17 @@ TestMaker(てすとめーかー)
 =========================
 小学生向けの計算問題を自動生成
 
-何桁と何桁のなんの計算をするかを選択肢し、「作成」ボタンを押すことで問題を自動生成してくれます。  
+何桁と何桁のなんの計算をするかを選択し、「作成」ボタンを押すことで問題を自動生成してくれます。  
 
 実行方法
 --------
 下記からダウンロードし、解凍
 https://github.com/Ikuyadeu/TestMaker/archive/master.zip
+
+コマンドラインを立ち上げてダウンロードしたところへ移動してから
 ```
-$ cd src
+$ unzip TestMaker-master.zip
+$ cd TestMaker-master/src
 $ java -jar TestMaker.java  
 ```
 
