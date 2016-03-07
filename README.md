@@ -1,33 +1,45 @@
 TestMaker(てすとめーかー)
 =========================
 小学生向けの計算問題を自動生成
-
 何桁と何桁のなんの計算をするかを選択肢し、「作成」ボタンを押すことで問題を自動生成してくれます。  
+
 
 実行方法
 --------
 下記からダウンロードし、解凍
 https://github.com/Ikuyadeu/TestMaker/archive/master.zip
+
+下記のコマンドを実行することで使用できます。
+ターミナルを起動し、jarファイル（実行ファイル）を生成
 ```
 $ cd src
 $ java -jar TestMaker.java  
 ```
 
-コマンドを実行することで使用できます。  
 動作環境
 ---------
-Java8が動作する環境(Ubuntu14.04で動作確認済み)  
-開発言語
---------
-Java,FXML  
-開発環境
---------
-eclipse  
+Java8が必要
+ない場合は下記リンクからダウンロード
+https://www.java.com/
 
-追加予定の機能
-----------------
-1.~~問題レイアウトの調整~~  
-2.アプリレイアウトの調整  
-3.小数点の計算  
-4.分数の計算  
-5.マイナスの値の計算  
+
+Automatic generation of computational problems for elementary school students
+Thechoice what to do and what-digit caluculations orders of magnitude of, the problem by pressing the "作成(Create)" button for us to automatically generate.
+
+Usage
+-----
+Downloaded from the following and thawed
+https://github.com/Ikuyadeu/TestMaker/archive/master.zip
+
+You can use it excute the command.
+This command can create jar file
+```
+$ cd src
+$ java -jar TestMaker.java  
+```
+
+enviroment
+----------
+You need Java8
+Download if you don't have it.
+https://www.java.com/
