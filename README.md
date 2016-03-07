@@ -18,12 +18,14 @@ $ java -jar TestMaker.java
 
 動作環境
 ---------
-Java8が必要
-ない場合は下記リンクからダウンロード
-https://www.java.com/
+Java8が必要  
+ない場合は下記リンクからダウンロード  
+https://www.java.com/  
 
 
-Automatic generation of computational problems for elementary school students
+English
+-------
+Automatic generation of computational problems for elementary school students  
 Thechoice what to do and what-digit caluculations orders of magnitude of, the problem by pressing the "作成(Create)" button for us to automatically generate.
 
 Usage
@@ -41,6 +43,6 @@ $ java -jar TestMaker.java
 
 enviroment
 ----------
-You need Java8
-Download if you don't have it.
-https://www.java.com/
+You need Java8  
+Download if you don't have it.  
+https://www.java.com/  
